@@ -7,6 +7,7 @@ import CRUD.repository.SkillRepository;
 import java.util.List;
 
 public class SkillController {
+
     private final SkillRepository skillRepository = new JsonSkillRepositoryImpl();
 
     public Skill getById(Long aLong) {

@@ -3,36 +3,19 @@ package CRUD.model;
 import java.util.List;
 import java.util.StringJoiner;
 
-public class Developer {
-    private Long id;
+/**
+ * Класс, представляющий объект разработчика.
+ */
+public class Developer extends Default {
+
     private String firstName;
     private String lastName;
     private List<Skill> skills;
-    private Status status;
-
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
-    }
 
     public Developer(String firstName, String lastName, List<Skill> skills) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.skills = skills;
-
-
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getFirstName() {
@@ -62,10 +45,11 @@ public class Developer {
     @Override
     public String toString() {
         return new StringJoiner(", ", Developer.class.getSimpleName() + "[", "]")
-                .add("id=" + id)
+                .add("id=" + getId() + "'")
                 .add("firstName='" + firstName + "'")
                 .add("lastName='" + lastName + "'")
-                .add("skills=" + skills)
+                .add("skills='" + skills + "'")
+                .add("status='" + getStatus())
                 .toString();
     }
 }

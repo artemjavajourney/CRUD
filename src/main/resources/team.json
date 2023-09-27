@@ -1,1 +1,1 @@
-[{"id":1,"name":"Team Java"},{"id":2,"name":"Team C#,Python"},{"id":3,"name":"Team GO","teamStatus":"DELETED"}]
+[{"name":"Team Java","id":1},{"name":"Team C#,Python","id":2},{"name":"Team GO","id":3,"status":"DELETED"},{"id":4,"status":"DELETED"}]
